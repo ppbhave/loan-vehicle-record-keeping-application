@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExpandedImg">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5dp"
+        android:visibility="visible"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:textAlignment="center">
+
+        <ImageView
+            android:id="@+id/Expanded"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title1"
+            android:layout_gravity="center|fill"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:maxHeight="1280dp"
+            android:maxWidth="768dp"
+            android:paddingBottom="50dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="50dp" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="155dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:text="Enlarged Image"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="173dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

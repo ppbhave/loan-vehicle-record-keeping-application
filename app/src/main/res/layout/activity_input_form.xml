@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inputForm">
+
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="155dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:text="Fill the Form"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="43dp"
+
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+        <Button
+            android:id="@+id/picclick"
+            android:layout_width="62dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/img1"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:onClick="takePic"
+            android:text="click Pic"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="104dp" />
+
+        <TextView
+            android:id="@+id/owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165dp"
+            android:ems="10"
+            android:text="Owner    :"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/noplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="193dp"
+            android:ems="10"
+            android:text="No.Plate:"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/parent2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/submit"
+            android:layout_below="@+id/noplate"
+            android:layout_marginTop="15dp"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/kms"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="10dp"
+                android:text="Enter no. of Kms"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:ignore="MissingConstraints"
+
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="150dp" />
+
+            <EditText
+                android:id="@+id/editkms"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:inputType="number"
+                tools:ignore="MissingConstraints"
+
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="172dp" />
+
+            <TextView
+                android:id="@+id/liters"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/kms"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="9dp"
+                android:text="Enter no. of Litres filled"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:ignore="MissingConstraints"
+
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="215dp" />
+
+            <EditText
+                android:id="@+id/editliters"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:inputType="number"
+                tools:ignore="MissingConstraints"
+
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="172dp" />
+
+            <TextView
+                android:id="@+id/pump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="9dp"
+                android:text="Name of Petrol pump"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:ignore="MissingConstraints"
+
+                tools:layout_editor_absoluteX="31dp"
+                tools:layout_editor_absoluteY="291dp" />
+
+            <EditText
+                android:id="@+id/editpump"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/liters"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:visibility="visible"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="319dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Save"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="430dp" />
+
+        <Button
+            android:id="@+id/transit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:onClick="goToAct"
+            android:text="Read Records"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="430dp" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
